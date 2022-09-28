@@ -31,7 +31,7 @@ const VideoDetail = () => {
       <Stack direction={{xs:'column', md:'row'}}>
         <Box flex={1}>
           <Box sx={{width:'100%',position:'sticky',top:'86px'}}>
-            <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className="react-player" controls />
+            <ReactPlayer url={`https://www.youtube.com/watch?v=${id}`}  className="react-player" controls />
             <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
                 {title}
             </Typography>
@@ -55,7 +55,7 @@ const VideoDetail = () => {
             </Stack>
           </Box>
         </Box>
-        <Box px={2} py={{md:1,sm:5 , xs:5}} justifyContent="center" alignItems="center">
+        <Box px={2} py={{md:1 , xs:5}} justifyContent="center" alignItems="center">
           <Videos Videos={videos} direction="column"/>
 
         </Box>
